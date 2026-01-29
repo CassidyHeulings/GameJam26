@@ -9,6 +9,9 @@
 using namespace sf;
 using namespace std;
 
+// TODO add states to other classes
+// TODO add mouse position to other classes
+
 int main() {
     // initialize game states
     enum class State { GAME_OVER, CRAFTING, PLAYING };
