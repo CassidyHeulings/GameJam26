@@ -23,6 +23,8 @@ add_executable(GameJam26 "Source Files/main.cpp"
         "Source Files/Graphics.cpp"
         "Header Files/Graphics.hpp"
         "Source Files/SoundEngine.cpp"
-        "Header Files/SoundEngine.hpp")
+        "Header Files/SoundEngine.hpp"
+        "Source Files/LevelUpdate.cpp"
+        "Header Files/LevelUpdate.hpp")
 
 target_link_libraries(GameJam26 sfml-graphics sfml-window sfml-system sfml-audio)
