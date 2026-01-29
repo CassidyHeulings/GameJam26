@@ -3,6 +3,7 @@
 //
 
 #include <SFML/Graphics.hpp>
+#include "../Header Files/InputDispatcher.hpp"
 #include "../Header Files/Player.hpp"
 
 using namespace sf;

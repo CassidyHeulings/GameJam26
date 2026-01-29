@@ -8,6 +8,10 @@ find_package(SFML 2.6 COMPONENTS graphics window system audio REQUIRED)
 
 add_executable(GameJam26 "Source Files/main.cpp"
         "Source Files/Player.cpp"
-        "Header Files/Player.hpp")
+        "Header Files/Player.hpp"
+        "Source Files/InputDispatcher.cpp"
+        "Header Files/InputDispatcher.hpp"
+        "Source Files/InputReceiver.cpp"
+        "Header Files/InputReceiver.hpp")
 
 target_link_libraries(GameJam26 sfml-graphics sfml-window sfml-system sfml-audio)
