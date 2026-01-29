@@ -16,6 +16,11 @@ add_executable(GameJam26 "Source Files/main.cpp"
         "Source Files/Factory.cpp"
         "Header Files/Factory.hpp"
         "Source Files/GameObject.cpp"
-        "Header Files/GameObject.hpp")
+        "Header Files/GameObject.hpp"
+        "Header Files/Component.hpp"
+        "Source Files/Update.cpp"
+        "Header Files/Update.hpp"
+        "Source Files/Graphics.cpp"
+        "Header Files/Graphics.hpp")
 
 target_link_libraries(GameJam26 sfml-graphics sfml-window sfml-system sfml-audio)
