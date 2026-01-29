@@ -7,6 +7,8 @@
 using namespace sf;
 using namespace std;
 
+// TODO test texture here
+
 Factory::Factory(RenderWindow *window) {
     m_Window = window;
     // allocate space for a new texture
