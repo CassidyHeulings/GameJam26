@@ -24,7 +24,7 @@ int main() {
     // vertex array to hold all graphics
     VertexArray canvas(Quads, 0);
     // TODO fill these in when classes are created
-    // dispatch events to objects
+    InputDispatcher inputDispatcher(&window); // dispatch events to objects
     // vector to hold game objects
     // factory to construct game objects
     // send game elements to factory to set up game
@@ -39,7 +39,7 @@ int main() {
     while (window.isOpen()) {
         float dt = clock.restart().asSeconds(); // time per frame
         // TODO fill these in when classes are made
-        // dispatch input to objects
+        inputDispatcher.dispatchInputEvents(); // dispatch input to objects
         window.clear(); // clear frame
         // update game objects
         // draw game objects to canvas

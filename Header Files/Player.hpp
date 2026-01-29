@@ -27,16 +27,16 @@ public:
     // TODO add more here
 private:
     const float START_SPEED = 200;
-    sf::Vector2f position;
-    sf::Sprite sprite;
-    sf::Texture texture;
-    sf::Vector2f resolution;
-    sf::IntRect worldRect;
+    sf::Vector2f m_Position;
+    sf::Sprite m_Sprite;
+    sf::Texture m_Texture;
+    sf::Vector2f m_Resolution;
+    sf::IntRect m_WorldRect;
     // direction player moving
-    int tileSize;
-    bool upPressed;
-    bool downPressed;
-    bool rightPressed;
-    bool leftPressed;
-    float speed; // px/s
+    int m_TileSize;
+    bool m_UpPressed;
+    bool m_DownPressed;
+    bool m_RightPressed;
+    bool m_LeftPressed;
+    float m_Speed; // px/s
 };
