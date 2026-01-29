@@ -3,12 +3,12 @@
 //
 
 #include "../Header Files/GameObject.hpp"
-#include "SFML/Graphics.hpp"
-#include <iostream>
+#include <SFML/Graphics.hpp>
+#include "../Header Files/Graphics.hpp"
+#include "../Header Files/Update.hpp"
 using namespace std;
 using namespace sf;
 
-/**
 void GameObject::addComponent(shared_ptr<Component> newComponent) {
     m_Components.push_back(newComponent); // add the component
 }
@@ -34,4 +34,3 @@ void GameObject::draw(VertexArray &canvas) {
         }
     }
 }
-*/

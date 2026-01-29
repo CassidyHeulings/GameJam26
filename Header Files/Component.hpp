@@ -3,8 +3,6 @@
 //
 
 #pragma once
-#include <iostream>
-using namespace std;
 
 // data container for describing type of component
 class Component {

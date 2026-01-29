@@ -3,11 +3,10 @@
 //
 
 #include <SFML/Graphics.hpp>
-#include "../Header Files/InputDispatcher.hpp"
 #include "../Header Files/Factory.hpp"
 #include "../Header Files/GameObject.hpp"
+#include "../Header Files/InputDispatcher.hpp"
 #include "../Header Files/Player.hpp"
-
 using namespace sf;
 using namespace std;
 
@@ -25,7 +24,6 @@ int main() {
 
     // vertex array to hold all graphics
     VertexArray canvas(Quads, 0);
-    // TODO fill these in when classes are created
     InputDispatcher inputDispatcher(&window); // dispatch events to objects
     vector <GameObject> gameObjects; // vector to hold game objects
     Factory factory(&window); // factory to construct game objects
@@ -40,7 +38,6 @@ int main() {
     // game loop
     while (window.isOpen()) {
         float dt = clock.restart().asSeconds(); // time per frame
-        // TODO fill these in when classes are made
         inputDispatcher.dispatchInputEvents(); // dispatch input to objects
         window.clear(); // clear frame
         // update game objects

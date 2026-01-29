@@ -17,9 +17,8 @@ Factory::Factory(RenderWindow *window) {
         return;
     }
 }
-/**
+
 void Factory::loadLevel(vector<GameObject> &gameObjects, VertexArray &canvas,
     InputDispatcher &inputDispatcher) {
     // fill in later
 }
-*/
