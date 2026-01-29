@@ -7,8 +7,6 @@ set(SFML_DIR /opt/homebrew/opt/sfml@2/lib/cmake/SFML)
 find_package(SFML 2.6 COMPONENTS graphics window system audio REQUIRED)
 
 add_executable(GameJam26 "Source Files/main.cpp"
-        "Source Files/Player.cpp"
-        "Header Files/Player.hpp"
         "Source Files/InputDispatcher.cpp"
         "Header Files/InputDispatcher.hpp"
         "Source Files/InputReceiver.cpp"
@@ -25,6 +23,8 @@ add_executable(GameJam26 "Source Files/main.cpp"
         "Source Files/SoundEngine.cpp"
         "Header Files/SoundEngine.hpp"
         "Source Files/LevelUpdate.cpp"
-        "Header Files/LevelUpdate.hpp")
+        "Header Files/LevelUpdate.hpp"
+        "Source Files/PlayerUpdate.cpp"
+        "Header Files/PlayerUpdate.hpp")
 
 target_link_libraries(GameJam26 sfml-graphics sfml-window sfml-system sfml-audio)

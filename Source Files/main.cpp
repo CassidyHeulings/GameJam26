@@ -6,7 +6,6 @@
 #include "../Header Files/Factory.hpp"
 #include "../Header Files/GameObject.hpp"
 #include "../Header Files/InputDispatcher.hpp"
-#include "../Header Files/Player.hpp"
 using namespace sf;
 using namespace std;
 

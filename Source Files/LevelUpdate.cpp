@@ -3,7 +3,7 @@
 //
 
 #include "../Header Files/LevelUpdate.hpp"
-//#include "../Header Files/PlayerUpdate.hpp"
+#include "../Header Files/PlayerUpdate.hpp"
 #include "../Header Files/SoundEngine.hpp"
 using namespace sf;
 using namespace std;
@@ -28,7 +28,7 @@ void LevelUpdate::update(float timeSinceLastUpdate) {
 
 void LevelUpdate::assemble(shared_ptr<LevelUpdate> levelUpdate, shared_ptr<PlayerUpdate> playerUpdate) {
     // update players position in class based on player position
-    //m_PlayerPosition = playerUpdate->getPositionPointer();
+    m_PlayerPosition = playerUpdate->getPositionPointer();
     //temp
     SoundEngine::startMusic();
 }
