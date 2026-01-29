@@ -4,6 +4,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "../Header Files/InputDispatcher.hpp"
+#include "../Header Files/Factory.hpp"
+#include "../Header Files/GameObject.hpp"
 #include "../Header Files/Player.hpp"
 
 using namespace sf;
@@ -25,9 +27,9 @@ int main() {
     VertexArray canvas(Quads, 0);
     // TODO fill these in when classes are created
     InputDispatcher inputDispatcher(&window); // dispatch events to objects
-    // vector to hold game objects
-    // factory to construct game objects
-    // send game elements to factory to set up game
+    vector <GameObject> gameObjects; // vector to hold game objects
+    Factory factory(&window); // factory to construct game objects
+    factory.loadLevel(gameObjects, canvas, inputDispatcher); // send game elements to factory to set up game
 
     // initialize game variables
     Vector2f mouseWorldPosition;
@@ -42,7 +44,13 @@ int main() {
         inputDispatcher.dispatchInputEvents(); // dispatch input to objects
         window.clear(); // clear frame
         // update game objects
+        for (auto& gameObject : gameObjects) {
+            gameObject.update(dt);
+        }
         // draw game objects to canvas
+        for (auto& gameObject : gameObjects) {
+            gameObject.draw(canvas);
+        }
         window.display(); // show next frame
     }
 
