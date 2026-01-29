@@ -3,6 +3,8 @@
 //
 
 #include <SFML/Graphics.hpp>
+#include "../Header Files/Player.hpp"
+
 using namespace sf;
 
 int main() {
@@ -20,6 +22,7 @@ int main() {
     // initialize game variables
     Vector2f mouseWorldPosition;
     Vector2i mouseScreenPosition;
+
     IntRect world;
 
     // game loop
