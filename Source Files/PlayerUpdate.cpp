@@ -11,10 +11,6 @@ FloatRect* PlayerUpdate::getPositionPointer() {
     return &m_Position; // return position of player
 }
 
-float* PlayerUpdate::getRotationPointer() {
-    return &m_Rotation;
-}
-
 void PlayerUpdate::handleInput() {
     // clear events ready for next iteration of loop
     m_InputReceiver.clearEvents();
