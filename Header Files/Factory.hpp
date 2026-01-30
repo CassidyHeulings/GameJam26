@@ -22,6 +22,19 @@ private:
     // pointer to game window
     sf::RenderWindow* m_Window;
     // TODO texture coordinates of all images in texture atlas
+    // tile texture details
+    const int TILE_SIDE = 64;
+    const int TILE_TYPES = 4;
+    const int GRASS_TILE = 1;
+    const int WATER_TILE = 2;
+    const int STONE_TILE = 3;
+    const int SAND_TILE = 4;
+    // number of areas
+    int m_NumAreas = 9;
+    // size of world in tiles
+    int m_WorldWidth = 36; // 768 * 3
+    int m_WorldHeight = 30; // 640 * 3
+    /**
     // player texture details
     const int PLAYER_TEX_LEFT = 0;
     const int PLAYER_TEX_TOP = 0;
@@ -55,4 +68,5 @@ private:
     const int TOP_MENU_TEX_TOP = 0;
     const int TOP_MENU_TEX_WIDTH = 100;
     const int TOP_MENU_TEX_HEIGHT = 100;
+    */
 };

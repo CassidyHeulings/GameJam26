@@ -25,7 +25,7 @@ int main() {
     View mainView(FloatRect(0,0, resolution.x, resolution.y));
 
     // vertex array to hold all graphics
-    VertexArray canvas(Quads, 0);
+    VertexArray canvas(Quads);
     InputDispatcher inputDispatcher(&window); // dispatch events to objects
     vector <GameObject> gameObjects; // vector to hold game objects
     Factory factory(&window); // factory to construct game objects
